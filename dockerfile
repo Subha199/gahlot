@@ -5,7 +5,7 @@ zip \
 unzip
 ADD https://downloads.wordpress.org/theme/kadence.1.0.30.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip kadence.zip
+RUN unzip kadence.1.0.30.zip
 RUN cp -rvf kadence/* .
 RUN rm -rf kadence.1.0.30.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
